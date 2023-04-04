@@ -1,4 +1,5 @@
 import { PropsWithChildren } from 'react';
+import styles from './Button.module.css';
 
 interface Props extends PropsWithChildren {
     color?: 'primary' | 'secondary' | 'danger';
@@ -7,7 +8,10 @@ interface Props extends PropsWithChildren {
 
 const Button = ({ children, color = 'primary', onClick }: Props) => {
     return (
-        <button className={'btn btn-' + color} onClick={onClick}>
+        <button
+            className={[styles.btn, styles['btn-' + color]].join(' ')}
+            onClick={onClick}
+        >
             {children}
         </button>
     );
