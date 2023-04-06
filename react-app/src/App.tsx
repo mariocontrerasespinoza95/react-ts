@@ -1,16 +1,8 @@
 import useUsers from './hooks/useUsers';
 
 function App() {
-    const {
-        users,
-        error,
-        isLoading,
-        setUsers,
-        setError,
-        addUser,
-        updateUser,
-        deleteUser,
-    } = useUsers();
+    const { users, error, isLoading, addUser, updateUser, deleteUser } =
+        useUsers();
 
     return (
         <>

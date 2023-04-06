@@ -39,7 +39,7 @@ const useUsers = () => {
 
     const addUser = () => {
         const originalUsers = [...users];
-        const newUser = { id: 0, name: 'Mario' };
+        const newUser = { id: originalUsers.length + 1, name: 'Mario' };
         setUsers([newUser, ...users]);
 
         userService
@@ -66,8 +66,6 @@ const useUsers = () => {
         users,
         error,
         isLoading,
-        setUsers,
-        setError,
         addUser,
         updateUser,
         deleteUser,
