@@ -1,4 +1,4 @@
-import { Platform } from '../hooks/useGames';
+import { Platform } from '../hooks/usePlatforms';
 
 export default <Platform[]>(<unknown>[
     {
