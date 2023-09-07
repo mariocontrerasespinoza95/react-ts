@@ -6,7 +6,6 @@ import useGames from '../hooks/useGames';
 import GameCard from './GameCard';
 import GameCardContainer from './GameCardContainer';
 import GameCardSkeleton from './GameCardSkeleton';
-import useGameQueryStore from '../store';
 
 const GameGrid = () => {
     const { data, error, isLoading, fetchNextPage, hasNextPage } = useGames();
